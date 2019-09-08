@@ -23,7 +23,8 @@ public class UserServiceImpl implements UserService {
     })
     @Override
     public String sayHi() {
-        return "hello dubbo, I'm from port:" + port;
+        //return "hello dubbo, I'm from port:" + port;
+        throw new RuntimeException("Exception to show hystrix enabled.");
     }
 }
 
