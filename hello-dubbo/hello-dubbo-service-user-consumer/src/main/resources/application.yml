@@ -12,7 +12,7 @@ dubbo:
     basePackages: com.hgx.hello.dubbo.service.user.consumer.controller
   application:
     id: hello-dubbo-service-user-comsumer
-    name: hello-dubbo-service-user-comsumer
+    name: hello-dubbo-service-useuserr-comsumer
     qos-port: 22223
     qos-enable: true
   protocol:
@@ -20,6 +20,7 @@ dubbo:
     name: dubbo
     port: 12345
 #    status: server
+    serialization: kryo
   registry:
     id: zookeeper
     address: zookeeper://192.168.124.140:2181?backup=192.168.124.140:2182,192.168.124.140:2183
