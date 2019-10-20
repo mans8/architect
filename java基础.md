@@ -36,10 +36,19 @@ s.start();
 调用start方法，开启新的线程，执行run方法。结果是两个线程并行。多次start一个线程是非法的，特别是当线程结束运行后，不能再重新启动。
 
 
+对于CPU而言，多线程意味着有多条执行路径，意味着CPU有选择权
+
+main方法压栈执行
+
+![1571077848674](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1571077848674.png)
 
 
 
+ss
 
+
+
+sssss
 
 
 
