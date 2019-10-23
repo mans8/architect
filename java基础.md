@@ -44,12 +44,45 @@ main方法压栈执行
 
 
 
-ss
+
+两种创建方法
+1.继承Thread类，重写run方法
+启动直接调用start()方法
+2.实现Runnable接口，实现run方法
+Person p = new Person();
+new Thread(p).start();
+
+1.避免了单继承的局限性
+2.增强程序的扩展性，降低了程序的耦合性，把设置线程任务和开启新线程进行了分离
 
 
 
-sssss
+匿名内部类实现线程的创建
+匿名：没有名字
+内部类：卸载其它类内部的类
 
+作用：简化代码
+```java
+new Thread(){
+	@Override
+	public void run(){
+		System.out.println("");
+	}
+}.start();
+```
+
+```java
+new Thread(new Runnable() {
+	@Override
+	public void run() {
+		System.out.println("");
+	}
+}).start();
+```
+
+
+
+线程安全
 
 
 
